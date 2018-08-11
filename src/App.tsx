@@ -1,5 +1,7 @@
 import React from 'react';
 
+import 'assets/css/main.css';
+
 class App extends React.Component {
   public render() {
     return (
