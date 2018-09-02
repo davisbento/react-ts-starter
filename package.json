@@ -7,16 +7,6 @@
   },
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@types/react-router-dom": "^4.3.0",
-    "node-sass-chokidar": "^1.3.3",
-    "npm-run-all": "^4.1.3",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts-ts": "2.16.0",
-    "tslib": "^1.9.3",
-    "tslint-eslint-rules": "^5.3.1"
-  },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
@@ -27,11 +17,22 @@
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   },
+  "dependencies": {
+    "node-sass-chokidar": "^1.3.3",
+    "npm-run-all": "^4.1.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts-ts": "2.16.0",
+    "tslib": "^1.9.3",
+    "tslint-eslint-rules": "^5.3.1"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.1",
     "@types/node": "^10.5.4",
     "@types/react": "^16.4.7",
     "@types/react-dom": "^16.0.6",
+    "@types/react-router-dom": "^4.3.0",
     "typescript": "^3.0.1"
   }
 }
