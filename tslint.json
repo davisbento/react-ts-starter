@@ -1,21 +1,14 @@
 {
+  "extends": "tslint-react",
   "rules": {
+    "jsx-boolean-value": ["never"],
+    "jsx-no-multiline-js": false,
+    "jsx-no-lambda": false,
     "adjacent-overload-signatures": true,
-    "member-ordering": [
-      true,
-      {
-        "order": "fields-first"
-      }
-    ],
-    "no-namespace": [
-      true,
-      "allow-declarations"
-    ],
+    "import-blacklist": [true, "date-fns", "@material-ui/core", "lodash"],
+    "no-namespace": [true, "allow-declarations"],
     "no-reference": true,
-    "no-var-requires": false,
-    "only-arrow-functions": [
-      false
-    ],
+    "only-arrow-functions": [false],
     "typedef-whitespace": [
       true,
       {
@@ -33,59 +26,22 @@
         "variable-declaration": "onespace"
       }
     ],
-    "interface-name": [
-      true,
-      "always-prefix"
-    ],
-    "quotemark": [
-      true,
-      "single"
-    ],
+    "interface-name": [true, "always-prefix"],
+    "quotemark": [true, "single"],
     "no-duplicate-variable": true,
-    "indent": [
-      true,
-      "spaces"
-    ],
-    "linebreak-style": [
-      false,
-      "LF"
-    ],
-    "max-file-line-count": [
-      true,
-      600
-    ],
-    "max-line-length": [
-      true,
-      150
-    ],
+    "indent": [true, "spaces"],
+    "linebreak-style": [false, "LF"],
+    "max-file-line-count": [true, 300],
+    "max-line-length": [true, 150],
     "no-default-export": false,
     "no-require-imports": false,
     "no-trailing-whitespace": true,
-    "semicolon": [
-      true,
-      "always"
-    ],
-    "no-consecutive-blank-lines": [
-      true
-    ],
-    "object-literal-key-quotes": [
-      true,
-      "as-needed"
-    ],
+    "semicolon": [true, "always"],
+    "no-consecutive-blank-lines": [true],
+    "object-literal-key-quotes": [true, "as-needed"],
     "object-literal-shorthand": true,
-    "variable-name": [
-      true,
-      "check-format",
-      "allow-leading-underscore"
-    ],
-    "no-extra-semi": [
-      true
-    ],
-    "no-var-keyword": [
-      true
-    ]
+    "no-extra-semi": [true],
+    "no-var-keyword": [true]
   },
-  "rulesDirectory": [
-    "node_modules/tslint-eslint-rules/dist/rules"
-  ]
+  "rulesDirectory": ["node_modules/tslint-eslint-rules/dist/rules"]
 }

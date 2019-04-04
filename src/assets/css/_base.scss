@@ -2,3 +2,12 @@
   padding: 0;
   margin: 0;
 }
+
+.App {
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
