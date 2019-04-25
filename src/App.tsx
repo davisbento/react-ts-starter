@@ -1,18 +1,19 @@
-import 'assets/css/main.css';
+import { theme } from 'assets/theme';
+import React, { PureComponent } from 'react';
+import { ThemeProvider } from 'styled-components';
 
-import React from 'react';
-
-class App extends React.Component {
+class App extends PureComponent {
   public render() {
     return (
-      <div className='App'>
-        <header className='App-header'>
-          <h1 className='App-title'>Welcome to React with TS</h1>
-        </header>
-        <p className='App-intro'>
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
+      <ThemeProvider theme={theme}>
+        <div>
+          <h1>Welcome to React with TS</h1>
+
+          <p>
+            To get started, edit <code>src/App.tsx</code> and save to reload.
+          </p>
+        </div>
+      </ThemeProvider>
     );
   }
 }

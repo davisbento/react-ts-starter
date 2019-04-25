@@ -8,14 +8,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start-js": "react-scripts-ts start",
-    "start": "concurrently \"npm run watch-css\" \"npm run start-js\"",
-    "build-js": "react-scripts-ts build",
-    "build": "concurrently \"npm run build-css\" \"npm run build-js\"",
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "start": "cross-env NODE_PATH=./src react-scripts start",
+    "build": "cross-env NODE_PATH=./src react-scripts build",
+    "test": "cross-env NODE_PATH=./src react-scripts test --env=jsdom",
+    "eject": "cross-env NODE_PATH=./src react-scripts eject"
   },
   "husky": {
     "hooks": {
@@ -31,7 +27,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts-ts": "3.1.0",
+    "react-scripts": "^3.0.0",
+    "styled-components": "^4.2.0",
     "tslib": "^1.9.3",
     "tslint-eslint-rules": "^5.4.0"
   },
@@ -42,9 +39,27 @@
     "@types/react": "^16.8.12",
     "@types/react-dom": "^16.8.3",
     "@types/react-router-dom": "^4.3.1",
+    "@types/styled-components": "^4.1.14",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "24.7.1",
     "concurrently": "^4.1.0",
-    "husky": "^1.3.1",
+    "cross-env": "^5.2.0",
+    "husky": "^2.1.0",
+    "jest": "24.7.1",
+    "tslint": "^5.16.0",
     "tslint-react": "^4.0.0",
     "typescript": "^3.4.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
