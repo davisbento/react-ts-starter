@@ -23,6 +23,8 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         font-size: 1.5rem;
         line-height: 2;
+        color: #fff;
+        background-color: #000;
     }
     a {
         text-decoration: none;
