@@ -4,4 +4,5 @@
 2. Editorconfig
 3. Absolute path
 4. VS Code Extensions
-5. Sass Support
+5. React hooks
+6. React router dom
