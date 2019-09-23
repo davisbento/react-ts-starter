@@ -1,6 +1,6 @@
 import { GlobalStyle, theme } from 'assets/theme';
-import About from 'pages/About';
-import Home from 'pages/Home';
+import About from 'components/pages/About';
+import Home from 'components/pages/Home';
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
