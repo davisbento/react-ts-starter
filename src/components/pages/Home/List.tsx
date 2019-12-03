@@ -11,9 +11,11 @@ export default memo(() => {
 
   return (
     <div>
-      {console.log(data)}
-      {console.log(loading)}
       <h1>Listagem</h1>
+
+      {loading && <div>Loading...</div>}
+
+      {data && <div>{data[0].email}</div>}
 
       <button onClick={increment}>Increment and call API again</button>
     </div>

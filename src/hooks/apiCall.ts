@@ -3,12 +3,13 @@ import { useState, useEffect, useCallback } from 'react';
 function useApiCall<T>(apiCallback: () => Promise<T>, deps: Array<any>): [T, boolean, any, () => void] {
   const [data, setData] = useState<T>(undefined);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(undefined);
 
   const cb = useCallback(apiCallback, deps);
 
   const fetchData = useCallback(async () => {
-    setError(null);
+    setData(undefined);
+    setError(undefined);
     setIsLoading(true);
     try {
       const data = await cb();

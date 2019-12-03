@@ -3,7 +3,12 @@ import axios, { Method, AxiosResponse } from 'axios';
 export class ApiService {
   public async get(url: string, params?: any): Promise<any> {
     const response = await this.request('GET', url, params);
-    return response.data.results;
+    return response.data;
+  }
+
+  public async post(url: string, body: any): Promise<any> {
+    const response = await this.request('POST', url, body);
+    return response.data;
   }
 
   private async request(method: Method, url: string, data: any = null): Promise<AxiosResponse> {

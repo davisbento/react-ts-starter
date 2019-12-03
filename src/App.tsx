@@ -1,20 +1,20 @@
-import { GlobalStyle, theme } from 'assets/theme';
-import About from 'components/pages/About';
+import FeedbackMessage from 'components/pages/Feedback';
 import Home from 'components/pages/Home';
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
+import Feedback from 'components/shared/FeedbackMessage';
+
+import 'assets/css/global.css';
 
 export default () => (
-  <ThemeProvider theme={theme}>
-    <Fragment>
-      <GlobalStyle />
-      <Router>
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/about' component={About} />
-        </Switch>
-      </Router>
-    </Fragment>
-  </ThemeProvider>
+  <Fragment>
+    <Router>
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/feedback-message' component={FeedbackMessage} />
+      </Switch>
+    </Router>
+
+    <Feedback />
+  </Fragment>
 );
