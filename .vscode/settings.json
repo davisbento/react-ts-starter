@@ -1,21 +1,7 @@
 {
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
   "editor.formatOnType": false,
   "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {
-      "autoFix": true,
-      "language": "typescript"
-    },
-    {
-      "autoFix": true,
-      "language": "typescriptreact"
-    }
-  ],
   "files.exclude": {
     "build": true,
     "**/*.css": {
@@ -41,5 +27,8 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescriptHero.imports.organizeSortsByFirstSpecifier": true,
   "typescriptHero.imports.ignoredFromRemoval": [],
-  "typescriptHero.imports.multiLineTrailingComma": false
+  "typescriptHero.imports.multiLineTrailingComma": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

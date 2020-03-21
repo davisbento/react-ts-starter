@@ -1,20 +1,18 @@
-import FeedbackMessage from 'components/pages/Feedback';
 import Home from 'components/pages/Home';
-import React, { Fragment } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Feedback from 'components/shared/FeedbackMessage';
+import Login from 'components/pages/Login';
 
 import 'assets/css/global.css';
+import { AuthProvider } from 'providers/AuthProvider';
 
 export default () => (
-  <Fragment>
+  <AuthProvider>
     <Router>
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/feedback-message' component={FeedbackMessage} />
+        <Route path='/login' component={Login} />
       </Switch>
     </Router>
-
-    <Feedback />
-  </Fragment>
+  </AuthProvider>
 );

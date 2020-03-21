@@ -1,6 +1,11 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "extends": [
     "plugin:react/recommended",
     "prettier/@typescript-eslint",
@@ -15,11 +20,27 @@
     }
   },
   "rules": {
-    "react/display-name": ["off"],
-    "react/prop-types": ["off"],
-    "no-restricted-imports": ["error", "date-fns", "mdi-react", "lodash"],
-    "linebreak-style": ["error", "unix"],
-    "max-lines": ["error", 300],
+    "prettier/prettier": "error",
+    "react/display-name": [
+      "off"
+    ],
+    "react/prop-types": [
+      "off"
+    ],
+    "no-restricted-imports": [
+      "error",
+      "date-fns",
+      "mdi-react",
+      "lodash"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "max-lines": [
+      "error",
+      300
+    ],
     "max-len": [
       "warn",
       120,
@@ -35,26 +56,54 @@
         "max": 1
       }
     ],
-    "no-trailing-spaces": ["error"],
-    "no-extra-semi": ["error"],
-    "no-var": ["error"],
-    "quotes": ["error", "single", { "avoidEscape": true }],
-    "object-shorthand": ["error"],
-    "semi": ["error", "always"],
+    "no-trailing-spaces": [
+      "error"
+    ],
+    "no-extra-semi": [
+      "error"
+    ],
+    "no-var": [
+      "error"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "object-shorthand": [
+      "error"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
     "camelcase": [
       "error",
       {
         "properties": "always"
       }
     ],
-    "no-return-await": ["error"],
-    "react/jsx-no-undef": ["off"],
+    "no-return-await": [
+      "error"
+    ],
+    "react/jsx-no-undef": [
+      "off"
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-no-bind": "error",
-    "@typescript-eslint/no-unused-vars": ["warn"],
-    "@typescript-eslint/adjacent-overload-signatures": ["error"],
-    "@typescript-eslint/interface-name-prefix": ["error", "always"],
+    "@typescript-eslint/no-unused-vars": [
+      "warn"
+    ],
+    "@typescript-eslint/adjacent-overload-signatures": [
+      "error"
+    ],
+    "@typescript-eslint/interface-name-prefix": [
+      "error",
+      "always"
+    ],
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
       {
@@ -68,42 +117,36 @@
           "public-static-method",
           "protected-static-method",
           "private-static-method",
-
           "public-static-field",
           "protected-static-field",
           "private-static-field",
-
           "public-instance-field",
           "protected-instance-field",
           "private-instance-field",
-
           "public-field",
           "protected-field",
           "private-field",
-
           "static-field",
           "instance-field",
-
           "field",
-
           "constructor",
-
           "public-instance-method",
           "protected-instance-method",
           "private-instance-method",
-
           "public-method",
           "protected-method",
           "private-method",
-
           "static-method",
           "instance-method",
-
           "method"
         ]
       }
     ],
-    "@typescript-eslint/no-namespace": ["error"],
-    "@typescript-eslint/no-require-imports": ["error"]
+    "@typescript-eslint/no-namespace": [
+      "error"
+    ],
+    "@typescript-eslint/no-require-imports": [
+      "error"
+    ]
   }
 }
