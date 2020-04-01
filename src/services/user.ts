@@ -1,12 +1,16 @@
 import apiService, { ApiService } from './api';
 
+interface IApiReturn {
+  results: { email: string }[];
+}
+
 export class UserService {
   constructor(private apiService: ApiService) {
     this.apiService = apiService;
   }
 
-  public async list(id: number): Promise<{ email: string }[]> {
-    const data = await this.apiService.get(`https://randomuser.me/api/?${id}`);
+  public async list(id: number) {
+    const data = await this.apiService.get<IApiReturn>(`?${id}`);
 
     return data.results;
   }
