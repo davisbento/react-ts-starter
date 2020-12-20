@@ -14,6 +14,12 @@ export class UserService {
 
     return data.results;
   }
+
+  public async getAll() {
+    const data = await this.apiService.get('');
+
+    return data;
+  }
 }
 
 const userService = new UserService(apiService);
