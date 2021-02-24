@@ -1,5 +1,5 @@
 import React, { memo, useState, useCallback } from 'react';
-import useApiCall from 'hooks/apiCall';
+import useApiCall from 'hooks/useApiCall';
 import userService from 'services/user';
 
 export default memo(() => {
