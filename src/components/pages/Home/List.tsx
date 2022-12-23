@@ -1,4 +1,4 @@
-import React, { memo, useState, useCallback } from 'react';
+import { memo, useState, useCallback } from 'react';
 import useApiCall from 'hooks/useApiCall';
 import userService from 'services/user';
 

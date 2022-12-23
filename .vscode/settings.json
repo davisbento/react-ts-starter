@@ -17,12 +17,6 @@
     "**/*.map": {
       "when": "$(basename)"
     },
-    "**/.DS_Store": true,
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.tmp": true,
-    "**/bin/**": true,
-    "**/obj/**": true
   },
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescriptHero.imports.organizeSortsByFirstSpecifier": true,
